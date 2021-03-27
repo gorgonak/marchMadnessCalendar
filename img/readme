@@ -1,0 +1,3 @@
+The img folder will hold whatever images you want to use for the days of the month. 
+When creating your class in python just make sure the "imgname" (first parameter) is the same namea as your image file.
+each image has an alternate mode attach with the "_fact" suffix for the on click command.
