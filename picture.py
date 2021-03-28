@@ -17,7 +17,7 @@ class Pic:
         self.pic = ImageTk.PhotoImage(self.img_src)
         self.alt_pic = ImageTk.PhotoImage(self.alt_img_src)
 
-        self.Button = Button(image=self.pic, command=self.big_b, height=150, width=150)
+        self.Button = Button(image=self.pic, command=self.big_b)
         self.Button.grid(column=self.col, row=self.row)
 
     def big_b(self):
@@ -30,7 +30,6 @@ class Pic:
     def little_b(self):
         self.BigButton.destroy()
         print(self.img + ".BigButton Destroyed")
-
-        self.Button = Button(image=self.pic, command=self.big_b, height=150, width=150)
+        self.Button = Button(image=self.pic, command=self.big_b)
         self.Button.grid(column=self.col, row=self.row)
         print(self.img + " clicked")
